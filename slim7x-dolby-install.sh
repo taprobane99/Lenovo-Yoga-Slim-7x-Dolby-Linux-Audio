@@ -26,6 +26,7 @@ install_file() {
 # 1. User-level PipeWire Configs
 install_file "50-upmix.conf" "$USER_HOME/.config/pipewire/pipewire.conf.d/50-upmix.conf"
 install_file "99-dolby-music.conf" "$USER_HOME/.config/pipewire/pipewire.conf.d/99-dolby-music.conf"
+install_file "99-dolby-movie.conf" "$USER_HOME/.config/pipewire/pipewire.conf.d/99-dolby-movie.conf.disabled"
 install_file "50-upmix.conf" "$USER_HOME/.config/pipewire/pipewire-pulse.conf.d/50-upmix.conf"
 install_file "50-upmix.conf" "$USER_HOME/.config/pipewire/client.conf.d/50-upmix.conf"
 
