@@ -13,7 +13,7 @@ The "enhanced" preset uses a different approach to speaker tuning. I am not usin
 Let me know if you find any bugs.
 
 # Bugs
-Volume is at 100% when loading, but this shoudn't be that high when using the normal preset.
+Volume is at 100% when loading, but this shouldn't sound too loud when using the normal preset.
 
 # Setup
 1. Make sure you are running Ubuntu Concept from https://launchpad.net/~ubuntu-concept/+archive/ubuntu/x1e
