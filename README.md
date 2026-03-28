@@ -1,14 +1,12 @@
 # Dolby Audio for Ubuntu on Lenovo Slim 7x
 ## Implemented natively in Pipewire
-I converted the Dolby Settings from Windows into a Pipewire filter chain. This includes FIR Convolvers, 7 Band Compressors, and Limiters. I also added in the Bankstown Bass Enhancer from Asahi Linux. In my opinion audio with the normal preset now sounds nearly as good as on Windows, and matches the approach Asahi take with Macbook Audio.
-
-I haven't added any adjustments of my own, so you are getting as close as possible to Dolby tuning with the normal preset.
+I converted the Dolby Settings from Windows into a Pipewire filter chain. This includes the original factory-tuned Stereo FIR Convolver, 7 Band Compressor, and Limiter. I also added in a custom Bankstown Bass tuning. In my opinion audio with the normal preset now sounds nearly as good as on Windows, and matches the approach Asahi Linux take with Mac Audio.
 
 This project also upmixes the sound to use all 4 speakers on the Slim 7x (only the front tweeters are active by default).
 
 If requested I can convert the "Voice" preset. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
 
-The alternative preset uses a different approach to speaker tuning. I am not using it but include it in case anyone prefers it. You need to manually install it, replacing the normal preset.
+The alternative preset uses a different approach to speaker tuning - replacing the multiband compressor with an Exciter and Autogain. You need to manually install it, replacing the normal preset.
 
 Let me know if you find any bugs.
 
