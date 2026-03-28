@@ -28,6 +28,7 @@ Volume is at 100% when loading, but this shouldn't sound too loud when using the
 # FAQ
 1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers
 2. Is this as good as Asahi Audio for Macbooks? Hopefully. I use the same pipewire filter chain they do.
+3. Which Bankstown settings did you use? Macbook Air M1 13 inch 2020
 
 # Sources I used
 `Windows/Windows/System32/DriverStore/FileRepository/dax3_ext_qc.inf_arm64_16835e993a9f5725/AUCD_DEV_0C29_SUBSYS_IDEA4002_ADCM_SUBSYS_IDEA4002.xml` (Dolby settings)
