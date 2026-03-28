@@ -1,11 +1,11 @@
 # Dolby Audio for Ubuntu on the Lenovo Slim 7x
-I converted the Dolby Settings from Windows into a Pipewire filter chain. I also added in the Bankstown Bass Enhancer from Asahi Linux. In my opinion audio with the normal preset now sounds nearly as good as on Windows, and matches the approach Asahi take with Macbook Audio.
+I converted the Dolby Settings from Windows into a Pipewire filter chain. This includes FIR Convolvers, 7 Band Compressors, and Limiters. I also added in the Bankstown Bass Enhancer from Asahi Linux. In my opinion audio with the normal preset now sounds nearly as good as on Windows, and matches the approach Asahi take with Macbook Audio.
 
 I haven't added any adjustments of my own, so you are getting as close as possible to Dolby tuning with the normal preset.
 
 If requested I can convert the "Movie" and "Voice" presets. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
 
-The "enhanced" preset uses a different approach to speaker tuning. It is dangerous as it doesn't obey the speaker volume cap. Use with extreme caution! ⚠️
+The "enhanced" preset uses a different approach to speaker tuning. I am not using it but include it in case anyone prefers it. It is dangerous as it doesn't obey the speaker volume cap. Use with extreme caution! ⚠️
 
 Let me know if you find any bugs.
 
