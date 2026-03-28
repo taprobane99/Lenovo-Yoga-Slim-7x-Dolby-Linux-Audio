@@ -1,5 +1,5 @@
 # Dolby Audio for Ubuntu on the Lenovo Slim 7x
-## Implemented in Pipewire
+## Implemented natively in Pipewire
 I converted the Dolby Settings from Windows into a Pipewire filter chain. This includes FIR Convolvers, 7 Band Compressors, and Limiters. I also added in the Bankstown Bass Enhancer from Asahi Linux. In my opinion audio with the normal preset now sounds nearly as good as on Windows, and matches the approach Asahi take with Macbook Audio.
 
 I haven't added any adjustments of my own, so you are getting as close as possible to Dolby tuning with the normal preset.
@@ -25,6 +25,10 @@ Volume is at 100% when loading, but this shoudn't be that high when using the no
 7. Run `Slim7x-dolby-install.sh`
 8. Switch to Dolby Atmos - Music (Balanced) as the Output Device in Sound Settings
 
+# FAQ
+1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers
+2. Is this as good as Asahi Audio for Macbooks? Hopefully. I use the same pipewire filter chain they do.
+
 # Sources I used
 `Windows/Windows/System32/DriverStore/FileRepository/dax3_ext_qc.inf_arm64_16835e993a9f5725/AUCD_DEV_0C29_SUBSYS_IDEA4002_ADCM_SUBSYS_IDEA4002.xml` (Dolby settings)
 
@@ -32,7 +36,7 @@ https://github.com/sambow23/nixstuff/tree/main/hosts/t14s (for speaker protectio
 
 https://github.com/AsahiLinux/asahi-audio (for bankstown)
 
-https://github.com/antoinecellerier/speaker-tuning-to-easyeffects (normal preset)
+https://github.com/antoinecellerier/speaker-tuning-to-easyeffects (for converting Dolby to Easyeffects)
 
 https://github.com/mister2d/thinkpad-linux-audio (enhanced preset)
 
