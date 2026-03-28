@@ -32,20 +32,24 @@ install_file "50-upmix.conf" "$USER_HOME/.config/pipewire/client.conf.d/50-upmix
 # 2. User-level WirePlumber Config
 install_file "51-speaker-softmixer.conf" "$USER_HOME/.config/wireplumber/wireplumber.conf.d/51-speaker-softmixer.conf"
 
-# 3. System-level IRS file (Requires sudo)
-IRS_SRC="Dolby-Music-Balanced.irs"
-IRS_DEST="/usr/share/dolby-audio/Dolby-Music-Balanced.irs"
+# 3. System-level IRS files (Requires sudo)
+IRS_DIR="/usr/share/dolby-audio"
+echo "Preparing to install system-level IRS files..."
 
-if [ -f "$IRS_SRC" ]; then
-    echo "Installing $IRS_SRC to system directory (sudo required)..."
-    sudo mkdir -p "/usr/share/dolby-audio/"
-    sudo cp "$IRS_SRC" "$IRS_DEST"
-    sudo chmod 644 "$IRS_DEST"
-else
-    echo "Warning: Source file '$IRS_SRC' not found. Skipping system install."
-fi
+# Create the destination directory if it doesn't exist
+sudo mkdir -p "$IRS_DIR"
+
+# Loop through and install all necessary IRS files
+for irs_file in "Dolby-Music-Balanced.irs" "Dolby-Movie-Balanced.irs"; do
+    if [ -f "$irs_file" ]; then
+        echo "Installing $irs_file to $IRS_DIR/$irs_file..."
+        sudo cp "$irs_file" "$IRS_DIR/$irs_file"
+    else
+        echo "Warning: Source file '$irs_file' not found in current directory. Skipping."
+    fi
+done
 
 echo "-------------------------------------"
-echo "Installation complete."
-echo "To apply changes, it is recommended to restart PipeWire and WirePlumber:"
-echo "systemctl --user restart pipewire pipewire-pulse wireplumber"
+echo "Installation complete!"
+echo "To apply changes, restart PipeWire and WirePlumber using:"
+echo "systemctl --user restart pipewire wireplumber"
