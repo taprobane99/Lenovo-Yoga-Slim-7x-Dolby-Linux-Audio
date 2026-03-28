@@ -6,7 +6,7 @@ I haven't added any adjustments of my own, so you are getting as close as possib
 
 This project also upmixes the sound to use all 4 speakers on the Slim 7x (only the front tweeters are active by default).
 
-If requested I can convert the "Movie" and "Voice" presets. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
+If requested I can convert the "Voice" preset. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
 
 The alternative preset uses a different approach to speaker tuning. I am not using it but include it in case anyone prefers it. You need to manually install it, replacing the normal preset.
 
@@ -15,6 +15,7 @@ Let me know if you find any bugs.
 # Bugs
 Volume is at 100% when loading, but this shouldn't sound too loud because of the volume cap.
 The capture volumes block may cause audio artifacts when using volume sliders rather than fixed interval volume keys.
+Presets seem to conflict so only have one installed at a time.
 
 # Setup
 1. Make sure you are running Ubuntu Concept from https://launchpad.net/~ubuntu-concept/+archive/ubuntu/x1e
