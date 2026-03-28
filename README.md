@@ -17,8 +17,8 @@ Volume is at 100% when loading, but this shoudn't be that high when using the no
 2. Add `snd-soc-x1e80100.i_accept_the_danger=1` to your kernel command line if necessary
 3. Install the latest Alsa UCM Configuration from https://github.com/alsa-project/alsa-ucm-conf
 4. `sudo apt install lsp-plugins calf-plugins bankstown-lv2`
-5. Download repository and unzip
-6. Run `Slim7x-audio-patch.sh` to cap the volume on your speakers (no guarantee that this will work so lower your volume the first time you test it).
+5. Download this repository and unzip
+6. Run `Slim7x-audio-patch.sh` to cap the volume on your speakers (no guarantee that this will work as only tested on my machine, so lower your volume the first time you test it)
 7. Run `Slim7x-dolby-install.sh`
 8. Switch to Dolby Atmos - Music (Balanced) as the Output Device in Sound Settings
 
