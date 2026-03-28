@@ -14,8 +14,10 @@ Let me know if you find any bugs.
 
 # Bugs
 Volume is at 100% when loading, but this shouldn't sound too loud because of the volume cap.
+
 The capture volumes block may cause audio artifacts when using volume sliders rather than fixed interval volume keys.
-Presets seem to conflict so only have one installed at a time.
+
+Presets seem to conflict so only have one installed at a time (e.g. Music or Movie).
 
 # Setup
 1. Make sure you are running Ubuntu Concept from https://launchpad.net/~ubuntu-concept/+archive/ubuntu/x1e
