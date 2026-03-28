@@ -48,4 +48,4 @@ https://www.notebookcheck.net/Lenovo-Yoga-Slim-7x-14-G9-review-Multimedia-laptop
 # Notes
 I found 4 Dolby .xml files in my Windows DriverStore. This seemed the most likely to be for the Slim 7x.
 
-convert decibels easyeffects to linear for pipewire: linear = 10^(decibels/20)
+Convert decibels easyeffects to linear for pipewire: linear = 10^(decibels/20)
