@@ -8,7 +8,7 @@ This project also upmixes the sound to use all 4 speakers on the Slim 7x (only t
 
 If requested I can convert the "Movie" and "Voice" presets. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
 
-The "enhanced" preset uses a different approach to speaker tuning. I am not using it but include it in case anyone prefers it. You need to manually install it, replacing the normal preset. It is dangerous as it doesn't obey the speaker volume cap. Use with extreme caution! ⚠️
+The alternative preset uses a different approach to speaker tuning. I am not using it but include it in case anyone prefers it. You need to manually install it, replacing the normal preset. It is dangerous as it doesn't obey the speaker volume cap. Use with caution! ⚠️
 
 Let me know if you find any bugs.
 
@@ -39,7 +39,7 @@ https://github.com/AsahiLinux/asahi-audio (for bankstown)
 
 https://github.com/antoinecellerier/speaker-tuning-to-easyeffects (for converting Dolby to Easyeffects)
 
-https://github.com/mister2d/thinkpad-linux-audio (enhanced preset)
+https://github.com/mister2d/thinkpad-linux-audio (alternative preset)
 
 # Notes
 I found 4 Dolby .xml files in my Windows DriverStore. This seemed the most likely to be for the Slim 7x.
