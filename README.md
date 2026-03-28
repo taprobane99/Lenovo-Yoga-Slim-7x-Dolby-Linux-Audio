@@ -32,7 +32,7 @@ Presets seem to conflict so only have one installed at a time (e.g. Music or Mov
 # FAQ
 1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers
 2. Is this as good as Asahi Audio for Macbooks? Hopefully. I use the same pipewire filter chain they do.
-3. Which Bankstown settings did you use? Macbook Air M1 13 inch 2020
+3. Which Bankstown settings did you use? Custom tuning based on slightly tweaking Macbook Air M1 13 inch 2020 profile, and adding high pass filter
 
 # Sources I used
 `Windows/Windows/System32/DriverStore/FileRepository/dax3_ext_qc.inf_arm64_16835e993a9f5725/AUCD_DEV_0C29_SUBSYS_IDEA4002_ADCM_SUBSYS_IDEA4002.xml` (Dolby settings)
@@ -44,6 +44,8 @@ https://github.com/AsahiLinux/asahi-audio (for bankstown)
 https://github.com/antoinecellerier/speaker-tuning-to-easyeffects (for converting Dolby to Easyeffects)
 
 https://github.com/mister2d/thinkpad-linux-audio (alternative preset)
+
+https://www.notebookcheck.net/Lenovo-Yoga-Slim-7x-14-G9-review-Multimedia-laptop-with-Snapdragon-X-Elite-and-great-3K-OLED-display.875964.0.html (speaker measurements)
 
 # Notes
 I found 4 Dolby .xml files in my Windows DriverStore. This seemed the most likely to be for the Slim 7x.
