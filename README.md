@@ -4,6 +4,8 @@ I converted the Dolby Settings from Windows into a Pipewire filter chain. This i
 
 I haven't added any adjustments of my own, so you are getting as close as possible to Dolby tuning with the normal preset.
 
+This project also upmixes the sound to use all 4 speakers on the Slim 7x (only the front tweeters are active by default).
+
 If requested I can convert the "Movie" and "Voice" presets. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
 
 The "enhanced" preset uses a different approach to speaker tuning. I am not using it but include it in case anyone prefers it. It is dangerous as it doesn't obey the speaker volume cap. Use with extreme caution! ⚠️
