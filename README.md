@@ -23,8 +23,8 @@ Presets seem to conflict so only have one installed at a time (e.g. Music or Mov
 3. Install the latest Alsa UCM Configuration from https://github.com/alsa-project/alsa-ucm-conf
 4. `sudo apt install lsp-plugins calf-plugins bankstown-lv2`
 5. Download this repository and unzip
-6. Run `Slim7x-audio-patch.sh` to upmix to all 4 speakers, and cap the volume on your speakers (no guarantee that this will work as only tested on my machine, so lower your volume the first time you play music after running it)
-7. Run `Slim7x-dolby-install.sh`
+6. Run `slim7x-audio-patch.sh` to upmix to all 4 speakers, and cap the volume on your speakers (no guarantee that this will work as only tested on my machine, so lower your volume the first time you play music after running it)
+7. Run `slim7x-dolby-install.sh`
 8. Switch to Dolby Atmos - Music (Balanced) as the Output Device in Sound Settings
 9. Use `dolby-switch.sh` to change between Music and Movie presets
 
