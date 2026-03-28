@@ -23,10 +23,14 @@ Volume is at 100% when loading, but this shoudn't be that high when using the no
 8. Switch to Dolby Atmos - Music (Balanced) as the Output Device in Sound Settings
 
 # Sources I used
-Windows/Windows/System32/DriverStore/FileRepository/dax3_ext_qc.inf_arm64_16835e993a9f5725/AUCD_DEV_0C29_SUBSYS_IDEA4002_ADCM_SUBSYS_IDEA4002.xml (Dolby settings)
+`Windows/Windows/System32/DriverStore/FileRepository/dax3_ext_qc.inf_arm64_16835e993a9f5725/AUCD_DEV_0C29_SUBSYS_IDEA4002_ADCM_SUBSYS_IDEA4002.xml` (Dolby settings)
+
 https://github.com/sambow23/nixstuff/tree/main/hosts/t14s (for speaker protection)
+
 https://github.com/AsahiLinux/asahi-audio (for bankstown)
+
 https://github.com/antoinecellerier/speaker-tuning-to-easyeffects (normal preset)
+
 https://github.com/mister2d/thinkpad-linux-audio (enhanced preset)
 
 # Notes
