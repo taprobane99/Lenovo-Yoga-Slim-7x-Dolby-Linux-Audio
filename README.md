@@ -34,5 +34,6 @@ https://github.com/antoinecellerier/speaker-tuning-to-easyeffects (normal preset
 https://github.com/mister2d/thinkpad-linux-audio (enhanced preset)
 
 # Notes
-I found 4 .xml files in my Windows DriverStore. Fairly sure this is the right one.
+I found 4 Dolby .xml files in my Windows DriverStore. This seemed the most likely to be for the Slim 7x.
+
 convert decibels easyeffects to linear for pipewire: linear = 10^(decibels/20)
