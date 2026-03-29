@@ -70,9 +70,16 @@ alsaucm reload
 echo ""
 echo "Setting initial volume via WirePlumber..."
 if [ -n "$SUDO_USER" ]; then
-    # Run wpctl as the user who invoked sudo, using their specific runtime directory
-    sudo -u "$SUDO_USER" XDG_RUNTIME_DIR=/run/user/$(id -u "$SUDO_USER") wpctl set-volume 59 0.07
-    echo "  [✓] Volume set to 7% for node 59."
+    # Dynamically find the current ID of the Built-in Speaker
+    SPEAKER_ID=$(sudo -u "$SUDO_USER" XDG_RUNTIME_DIR=/run/user/$(id -u "$SUDO_USER") wpctl status | grep "Built-in Audio Speaker" | awk -F'.' '{print $1}' | awk '{print $NF}')
+
+    if [ -n "$SPEAKER_ID" ]; then
+        # Apply the volume to the dynamically found ID
+        sudo -u "$SUDO_USER" XDG_RUNTIME_DIR=/run/user/$(id -u "$SUDO_USER") wpctl set-volume "$SPEAKER_ID" 0.07
+        echo "  [✓] Volume set to 7% for Built-in Speaker (ID: $SPEAKER_ID)."
+    else
+        echo "  [!] Could not find the Built-in Speaker in wpctl status."
+    fi
 else
     echo "  [!] Could not set volume: Script was not run via sudo (cannot find user session)."
 fi
