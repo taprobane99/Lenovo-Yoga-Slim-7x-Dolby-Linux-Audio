@@ -8,7 +8,7 @@ If requested I can convert the "Voice" and "Game" presets. There is no auto-conv
 
 The alternative preset uses a different approach to speaker tuning - replacing the multiband compressor with an Exciter and Autogain. You need to manually install it, replacing the normal preset.
 
-The master volume is the Built in Speaker input. This is set to 7% with `slim7x-audio-patch.sh`.
+The master volume is the Built in Speaker output. This is set to 7% with `slim7x-audio-patch.sh`.
 
 Let me know if you find any bugs.
 
