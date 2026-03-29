@@ -8,7 +8,7 @@ If requested I can convert the "Voice" and "Game" presets. There is no auto-conv
 
 The alternative preset uses a different approach to speaker tuning - replacing the multiband compressor with an Exciter and Autogain. You need to manually install it, replacing the normal preset.
 
-The power amplifier is set at level 2 which give a decent level of sound around 80% system volume. 
+The power amplifier is set at level 2. It can be lowered to level 1 in `slim7x-audio-patch.sh` if you want to be extra-safe.
 
 Let me know if you find any bugs.
 
