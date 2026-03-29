@@ -13,7 +13,7 @@ The power amplifier is set at level 2. It can be lowered to level 1 in `slim7x-a
 Let me know if you find any bugs.
 
 # Bugs
-Volume is at 100% when first installing. I recommend immediately adjusting to 80% or lower.
+Volume is at 100% when first installing. Lower the volume before testing.
 
 The capture volumes block may cause temporary audio artifacts when using volume sliders rather than fixed interval volume keys.
 
