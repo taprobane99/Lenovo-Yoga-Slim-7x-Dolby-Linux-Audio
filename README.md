@@ -8,12 +8,12 @@ If requested I can convert the "Voice" and "Game" presets. There is no auto-conv
 
 The alternative preset uses a different approach to speaker tuning - replacing the multiband compressor with an Exciter and Autogain. You need to manually install it, replacing the normal preset.
 
-The power amplifier is set at level 2. It can be lowered to level 1 in `slim7x-audio-patch.sh` if you want to be extra-safe.
+The master volume is the Built in Speaker input. This is set to 7% with `slim7x-audio-patch.sh`.
 
 Let me know if you find any bugs.
 
 # Bugs
-Volume is at 100% when first installing. Lower the volume before testing.
+DSP Volume is at 100% when first installing. Lower the volume before testing.
 
 The capture volumes block may cause temporary audio artifacts when using volume sliders rather than fixed interval volume keys.
 
