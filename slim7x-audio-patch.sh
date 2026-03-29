@@ -37,8 +37,8 @@ patch_file() {
 
 # --- 1. Apply Patches ---
 
-# Step 1: Reduce Power Amplifer Volume (Range 0-31, step = 1.5 dB, 12 = +9 dB, 2 = -6 dB, 1 = -7.5 dB)
-patch_file 1 "/usr/share/alsa/ucm2/codecs/wsa884x/four-speakers/SpeakerSeq.conf" "PA Volume' 12" "PA Volume' 2"
+# Step 1: Reduce Power Amplifer Volume (Range 0-31, step = 1.5 dB, 12 = +9 dB, 1 = -7.5 dB)
+patch_file 1 "/usr/share/alsa/ucm2/codecs/wsa884x/four-speakers/SpeakerSeq.conf" "PA Volume' 12" "PA Volume' 1"
 
 # Step 2: Reduce Digital Volume 1 (Range 0-124, step = 1.5 dB, 58 = -22 dB)
 patch_file 2 "/usr/share/alsa/ucm2/codecs/qcom-lpass/wsa-macro/Wsa1SpeakerEnableSeq.conf" "Digital Volume' 68" "Digital Volume' 58"
@@ -59,11 +59,23 @@ echo "Locking 'alsa-ucm-conf' to prevent Ubuntu updates from overwriting these p
 apt-mark hold alsa-ucm-conf
 echo "  [✓] Package 'alsa-ucm-conf' is now on hold."
 
-# --- 3. Finalize ---
+# --- 3. Finalize ALSA ---
 
 echo ""
 echo "Patching process complete."
 echo "Reloading ALSA UCM configuration..."
 alsaucm reload
 
+# --- 4. Set Initial WirePlumber Volume ---
+echo ""
+echo "Setting initial volume via WirePlumber..."
+if [ -n "$SUDO_USER" ]; then
+    # Run wpctl as the user who invoked sudo, using their specific runtime directory
+    sudo -u "$SUDO_USER" XDG_RUNTIME_DIR=/run/user/$(id -u "$SUDO_USER") wpctl set-volume 59 0.07
+    echo "  [✓] Volume set to 7% for node 59."
+else
+    echo "  [!] Could not set volume: Script was not run via sudo (cannot find user session)."
+fi
+
+echo ""
 echo "Success! Your audio settings are now patched and protected."
