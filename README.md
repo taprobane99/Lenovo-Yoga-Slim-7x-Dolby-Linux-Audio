@@ -8,10 +8,12 @@ If requested I can convert the "Voice" and "Game" presets. There is no auto-conv
 
 The alternative preset uses a different approach to speaker tuning - replacing the multiband compressor with an Exciter and Autogain. You need to manually install it, replacing the normal preset.
 
+The power amplifier is set at level 2 which give a decent level of sound around 80% system volume. 
+
 Let me know if you find any bugs.
 
 # Bugs
-Volume is at 100% when loading, but this shouldn't sound too loud because of the volume cap.
+Volume is at 100% when first installing. I recommend immediately adjusting to 80% or lower.
 
 The capture volumes block may cause temporary audio artifacts when using volume sliders rather than fixed interval volume keys.
 
