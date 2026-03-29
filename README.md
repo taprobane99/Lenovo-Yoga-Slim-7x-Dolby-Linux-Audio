@@ -4,7 +4,7 @@ I converted the Dolby Settings from Windows into a Pipewire filter chain. This i
 
 This project also upmixes the sound to use all 4 speakers on the Slim 7x (only the front tweeters are active by default).
 
-If requested I can convert the "Voice" preset. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
+If requested I can convert the "Voice" and "Game" presets. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
 
 The alternative preset uses a different approach to speaker tuning - replacing the multiband compressor with an Exciter and Autogain. You need to manually install it, replacing the normal preset.
 
