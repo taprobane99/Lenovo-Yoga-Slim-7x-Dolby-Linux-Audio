@@ -1,5 +1,5 @@
 # Dolby Audio for Ubuntu on Lenovo Slim 7x
-## Implemented natively in Pipewire
+## Implemented as a native DSP in Pipewire
 I converted the Dolby EQ Settings from Windows into a Pipewire filter chain. This includes the original factory-tuned Stereo FIR Convolver, 7 Band Compressor, and Limiter. I also added in a custom Bankstown Bass tuning. In my opinion audio with the normal preset now sounds as good as on Windows, and matches the filter pipeline Asahi Linux use for Mac Audio.
 
 This project upmixes the sound to use all 4 speakers on the Slim 7x. This laptop has two full range speakers either side of the keyboard deck ("Rear"), and two tweeters under the front ("Front"). Only the tweeters are enabled by default.
