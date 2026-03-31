@@ -15,8 +15,6 @@ Let me know if you find any bugs.
 # Bugs
 DSP Volume is at 100% when first installing. Lower the volume before testing.
 
-The capture volumes block may cause temporary audio artifacts when using volume sliders rather than fixed interval volume keys.
-
 Presets seem to conflict so only have one installed at a time (e.g. Music or Movie).
 
 # Setup
