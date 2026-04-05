@@ -30,7 +30,7 @@ Presets seem to conflict so only have one installed at a time (e.g. Music or Mov
 
 # FAQ
 1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers.
-2. Is this as good as Asahi Audio for Macbooks? Hopefully. I use the same pipewire filter chain they do.
+2. Is this as good as Asahi Audio for Macbooks? I use the same pipewire filter chain they do, not the voltage sensing although I think that could be technically possible.
 3. Which Bankstown settings did you use? Custom tuning based on slightly tweaking Macbook Air M1 13 inch 2020 profile.
 
 # Sources I used
