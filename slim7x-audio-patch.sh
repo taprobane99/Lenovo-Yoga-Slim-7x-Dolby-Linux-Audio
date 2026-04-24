@@ -38,7 +38,7 @@ patch_file() {
 # --- 1. Apply Patches ---
 
 # Step 1: Reduce Power Amplifer Volume (Range 0-31, step = 1.5 dB, 12 = +9 dB, 1 = -7.5 dB)
-patch_file 1 "/usr/share/alsa/ucm2/codecs/wsa884x/four-speakers/SpeakerSeq.conf" "PA Volume' 12" "PA Volume' 1"
+patch_file 1 "/usr/share/alsa/ucm2/codecs/wsa884x/four-speakers/SpeakerSeq.conf" "PA Volume' 12" "PA Volume' 6"
 
 # Step 2: Reduce Digital Volume 1 (Range 0-124, step = 1.5 dB, 58 = -22 dB)
 patch_file 2 "/usr/share/alsa/ucm2/codecs/qcom-lpass/wsa-macro/Wsa1SpeakerEnableSeq.conf" "Digital Volume' 68" "Digital Volume' 58"
