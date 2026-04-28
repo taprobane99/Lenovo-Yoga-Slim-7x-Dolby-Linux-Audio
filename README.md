@@ -1,22 +1,17 @@
-# NOTE - There is something incorrect in the way the Dolby FIR are generated so this repo is wrong. Hope to get it corrected soon
 # Dolby Audio for Ubuntu on Lenovo Slim 7x
 ## Implemented as a native DSP in Pipewire
-I converted the Dolby EQ Settings from Windows into a Pipewire filter chain. This includes the original factory-tuned Stereo FIR Convolver, 7 Band Compressor, and Limiter. I also added in a custom Bankstown Bass tuning (disabled for now). In my opinion audio with the normal preset now sounds as good as on Windows, and matches the filter pipeline Asahi Linux use for Mac Audio.
+I converted the Dolby EQ Settings from Windows into a Pipewire filter chain. This includes the original factory-tuned Stereo FIR Convolver, 7 Band Compressor, and Limiter. I also added in a custom Bankstown Bass tuning, and 2 Band Crossover. Audio processing matches the filter pipeline Asahi Linux use for Mac Audio.
 
-This laptop has two full range speakers either side of the keyboard deck ("Rear"), and two tweeters under the front ("Front").
+This laptop has two full range speakers either side of the keyboard deck ("Rear"), and two woofers under the front ("Front").
 
 If requested I can convert the "Voice" and "Game" presets. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
 
-The alternative preset uses a different approach to speaker tuning - replacing the multiband compressor with an Exciter and Autogain. You need to manually install it, replacing the normal preset.
-
-The master volume is the Built in Speaker output. This is set to 7% with `slim7x-audio-patch.sh`.
+Providing you have run `slim7x-audio-patch.sh` the Power Amplifier is set to 0 dB so 100% master volume should be a safe upper limit. It is useful to install `Pavucontrol` to set volumes. I have "Built-in Audio Speaker" set at 100%, and my Dolby Atmos at 90% most of the time.
 
 Let me know if you find any bugs.
 
 # Bugs
-DSP Volume is at 100% when first installing. Lower the volume before testing.
-
-Presets seem to conflict so only have one installed at a time (e.g. Music or Movie).
+Presets seem to conflict so you can only have one in the menu at a time (e.g. Music or Movie).
 
 # Setup
 1. Make sure you are running Ubuntu Concept from https://launchpad.net/~ubuntu-concept/+archive/ubuntu/x1e
@@ -31,7 +26,7 @@ Presets seem to conflict so only have one installed at a time (e.g. Music or Mov
 
 # FAQ
 1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers.
-2. Is this as good as Asahi Audio for Macbooks? I use the same pipewire filter chain they do, not the voltage sensing although I think that could be technically possible.
+2. Is this as good as Asahi Audio for Macbooks? I use the same pipewire filter chain they do, but not the Voltage/Current sensing so technically no, but it does sound good.
 3. Which Bankstown settings did you use? Custom tuning based on slightly tweaking Macbook Air M1 13 inch 2020 profile.
 
 # Sources I used
