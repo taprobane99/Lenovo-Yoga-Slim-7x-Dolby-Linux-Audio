@@ -1,12 +1,12 @@
 # Dolby Audio for Ubuntu on Lenovo Slim 7x
 ## Implemented as a native DSP in Pipewire
-I converted the Dolby EQ Settings from Windows into a Pipewire filter chain. This includes the original factory-tuned Stereo FIR Convolver, 7 Band Compressor, and Limiter. I also added in a custom Bankstown Bass tuning, and 2 Band Crossover. Audio processing matches the filter pipeline Asahi Linux use for Mac Audio.
+I converted some Dolby EQ settings from Windows into a Pipewire filter chain. This is the original factory-tuned speaker response approximated as an Impulse Response using Room Eq Wizard. I then added in a custom Bankstown Bass tuning, 2 stage Compressor, and LR4 Crossover. The audio is also loudness corrected to sound good at low volumes too (just like Asahi Audio for Macs!). For the Movie profile simple stereo widening and a voice filter is added.
 
 This laptop has two full range speakers either side of the keyboard deck ("Rear"), and two woofers under the front ("Front").
 
-If requested I can convert the "Voice" and "Game" presets. There is no auto-conversion script as there are too many differences between EasyEffects and Pipewire, so I do it manually.
-
 Providing you have run `slim7x-audio-patch.sh` the Power Amplifier is set to 0 dB so 100% master volume should be a safe upper limit. It is useful to install `Pavucontrol` to set volumes. I have "Built-in Audio Speaker" set at 100%, and my Dolby Atmos at 90% most of the time.
+
+I will upload a folder at some stage with source files and screenshots if you want to do the whole process yourself in Room Eq Wizard. Dolby also have more digital audio filters such as "Detailed", "Balanced", "Warm" which I might add at a later stage.
 
 Let me know if you find any bugs.
 
@@ -36,13 +36,9 @@ https://github.com/sambow23/nixstuff/tree/main/hosts/t14s (for speaker protectio
 
 https://github.com/AsahiLinux/asahi-audio (for bankstown)
 
-https://github.com/antoinecellerier/speaker-tuning-to-easyeffects (for converting Dolby to Easyeffects)
-
-https://github.com/mister2d/thinkpad-linux-audio (alternative preset)
-
 https://www.notebookcheck.net/Lenovo-Yoga-Slim-7x-14-G9-review-Multimedia-laptop-with-Snapdragon-X-Elite-and-great-3K-OLED-display.875964.0.html (speaker measurements)
 
 # Notes
 I found 4 Dolby .xml files in my Windows DriverStore. This seemed the most likely to be for the Slim 7x.
 
-Convert decibels easyeffects to linear for pipewire: linear = 10^(decibels/20)
+Convert decibels to linear for pipewire: linear = 10^(decibels/20)
