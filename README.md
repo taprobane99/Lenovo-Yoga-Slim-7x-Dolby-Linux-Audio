@@ -21,7 +21,7 @@ Presets seem to conflict so you can only have one in the menu at a time (e.g. Mu
 5. Download this repository and unzip
 6. Run `slim7x-audio-patch.sh`
 7. Run `slim7x-dolby-install.sh`
-8. Switch to Dolby Atmos - Music (Balanced) as the Output Device in Sound Settings
+8. Switch to Dolby Atmos - Music as the Output Device in Sound Settings
 9. Use `dolby-switch.sh` to change between Music and Movie presets
 
 # FAQ
