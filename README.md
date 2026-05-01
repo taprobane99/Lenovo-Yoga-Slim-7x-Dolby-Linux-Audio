@@ -28,6 +28,7 @@ Presets seem to conflict so you can only have one in the menu at a time (e.g. Mu
 1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers.
 2. Is this as good as Asahi Audio for Macbooks? I use the same pipewire filter chain they do, but not the Voltage/Current sensing so technically no, but it does sound good.
 3. Which Bankstown settings did you use? Custom tuning based on slightly tweaking Macbook Air M1 13 inch 2020 profile.
+4. Did you use AI? No! Aside from some minor help with file formatting, this is all my own work.
 
 # Sources I used
 `Windows/Windows/System32/DriverStore/FileRepository/dax3_ext_qc.inf_arm64_16835e993a9f5725/AUCD_DEV_0C29_SUBSYS_IDEA4002_ADCM_SUBSYS_IDEA4002.xml` (Dolby settings)
