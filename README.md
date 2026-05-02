@@ -39,6 +39,8 @@ https://github.com/AsahiLinux/asahi-audio (for bankstown)
 
 https://www.roomeqwizard.com/ (for creating the impulse response)
 
+https://flathub.org/en/apps/org.audacityteam.Audacity (optional, for trimming the impulse response using stereogram view)
+
 https://flathub.org/en/apps/studio.kx.carla (for adjusting gains)
 
 https://x42-plugins.com/x42/x42-zconvolver (Convolver plugin for Carla)
