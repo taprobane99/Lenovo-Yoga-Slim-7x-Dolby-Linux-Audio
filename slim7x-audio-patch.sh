@@ -75,8 +75,8 @@ if [ -n "$SUDO_USER" ]; then
 
     if [ -n "$SPEAKER_ID" ]; then
         # Apply the volume to the dynamically found ID
-        sudo -u "$SUDO_USER" XDG_RUNTIME_DIR=/run/user/$(id -u "$SUDO_USER") wpctl set-volume "$SPEAKER_ID" 0.07
-        echo "  [✓] Volume set to 7% for Built-in Speaker (ID: $SPEAKER_ID)."
+        sudo -u "$SUDO_USER" XDG_RUNTIME_DIR=/run/user/$(id -u "$SUDO_USER") wpctl set-volume "$SPEAKER_ID" 1.00
+        echo "  [✓] Volume set to 100% for Built-in Speaker (ID: $SPEAKER_ID)."
     else
         echo "  [!] Could not find the Built-in Speaker in wpctl status."
     fi
