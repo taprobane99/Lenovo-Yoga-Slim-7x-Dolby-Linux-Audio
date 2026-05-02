@@ -37,6 +37,10 @@ https://github.com/sambow23/nixstuff/tree/main/hosts/t14s (for speaker protectio
 
 https://github.com/AsahiLinux/asahi-audio (for bankstown)
 
+https://www.roomeqwizard.com/ (for creating the impulse response)
+
+https://flathub.org/en/apps/studio.kx.carla (for adjusting gains)
+
 https://x42-plugins.com/x42/x42-zconvolver (Convolver plugin for Carla)
 
 https://www.notebookcheck.net/Lenovo-Yoga-Slim-7x-14-G9-review-Multimedia-laptop-with-Snapdragon-X-Elite-and-great-3K-OLED-display.875964.0.html (speaker measurements)
