@@ -24,6 +24,9 @@ Presets seem to conflict so you can only have one in the menu at a time (e.g. Mu
 8. Switch to Dolby Atmos - Music as the Output Device in Sound Settings
 9. Use `dolby-switch.sh` to change between Music and Movie presets
 
+# Setup for a different computer
+This method should work for any computer that has been Dolby tuned. Ignore steps 1-3 and 6. If your computer has only 2 speakers there is an example .conf to adapt.
+
 # FAQ
 1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers.
 2. Is this as good as Asahi Audio for Macbooks? I use the same pipewire filter chain they do, but not the Voltage/Current sensing so technically no, but it does sound good.
