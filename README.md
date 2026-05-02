@@ -49,5 +49,7 @@ https://www.notebookcheck.net/Lenovo-Yoga-Slim-7x-14-G9-review-Multimedia-laptop
 
 # Notes
 I found 4 Dolby .xml files in my Windows DriverStore. This seemed the most likely to be for the Slim 7x.
-Decibel values seem to be stored as x10 the real values to avoid decimal points in the xml
-Convert decibels to linear for pipewire: linear = 10^(decibels/20)
+
+Decibel values seem to be stored as x10 the real values to avoid decimal points in the xml.
+
+Convert decibels to linear for pipewire: linear = 10^(decibels/20).
