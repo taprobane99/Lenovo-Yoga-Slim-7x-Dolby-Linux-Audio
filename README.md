@@ -6,7 +6,7 @@ This laptop has two full range speakers either side of the keyboard deck ("Rear"
 
 Providing you have run `slim7x-audio-patch.sh` the Power Amplifier is set to 0 dB so 100% master volume should be a safe upper limit. It is useful to install `Pavucontrol` to set volumes. I have "Built-in Audio Speaker" set at 100%, and my Dolby Atmos at 90% most of the time.
 
-I will upload a folder at some stage with source files and screenshots if you want to do the whole process yourself in Room Eq Wizard and Carla. Dolby also have more digital audio filters such as "Detailed", "Balanced", "Warm" which I might add at a later stage.
+I added folders with source files and screenshots if you want to do the whole process yourself in Room Eq Wizard and Carla. Dolby also have more digital audio filters such as "Detailed", "Balanced", "Warm" which I might add at a later stage.
 
 Let me know if you find any bugs.
 
@@ -36,6 +36,8 @@ Presets seem to conflict so you can only have one in the menu at a time (e.g. Mu
 https://github.com/sambow23/nixstuff/tree/main/hosts/t14s (for speaker protection)
 
 https://github.com/AsahiLinux/asahi-audio (for bankstown)
+
+https://x42-plugins.com/x42/x42-zconvolver (Convolver plugin for Carla)
 
 https://www.notebookcheck.net/Lenovo-Yoga-Slim-7x-14-G9-review-Multimedia-laptop-with-Snapdragon-X-Elite-and-great-3K-OLED-display.875964.0.html (speaker measurements)
 
