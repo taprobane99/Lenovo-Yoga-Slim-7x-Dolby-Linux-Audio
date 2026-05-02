@@ -1,0 +1,13 @@
+Find <band_20_freq> values at the top of Dolby.xml, and <audio-optimizer-bands> for the <movie> and <music> keys
+Write these into two text files HouseCurve-Slim7x-Music.txt and HouseCurve-Slim7x-Movie.txt with a Freq/dB pair on each line, separated by a space. Freq values are already in Hz. Dolby decibel values from <audio-optimizer-bands> need to be divided by 10.
+File > Import > Import Frequency Response
+Import REW-flat.txt (5 Freq/dB pairs where all dB values are 0)
+Press EQ button
+Load HouseCurve-Slim7x-Music.txt as House curve
+All settings as in screenshot
+Press "Match response to target"
+Press "Generate measurement from filters"
+Back in main window select "Filters flat"
+File > Export > Export Impulse Response as wav [32 bit float, stereo, both channels set to "Filters flat", Export measured IR, 48 kHz]
+Notes: Don't try and match the Dolby Curve too precisely with large numbers of high amplitude filters, this will distort your music. Dolby Decibel values could alternatively need to be divided by 16, not sure.
+To-Do: Implement Balanced EQ - in theory just add decibel values
