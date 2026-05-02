@@ -6,7 +6,7 @@ This laptop has two full range speakers either side of the keyboard deck ("Rear"
 
 Providing you have run `slim7x-audio-patch.sh` the Power Amplifier is set to 0 dB so 100% master volume should be a safe upper limit. It is useful to install `Pavucontrol` to set volumes. I have "Built-in Audio Speaker" set at 100%, and my Dolby Atmos at 90% most of the time.
 
-I added folders with source files and screenshots if you want to do the whole process yourself in Room Eq Wizard and Carla. Dolby also have more digital audio filters such as "Detailed", "Balanced", "Warm" which I might add at a later stage.
+I added folders with source files and screenshots if you want to do the whole process yourself in Room Eq Wizard and Carla. Dolby also have more digital audio filters such as "Detailed", "Balanced", "Warm". I added the "Balanced" filters by zero-centering and then 10% blending with the speaker response (as Dolby seem to do).
 
 Let me know if you find any bugs.
 
@@ -49,5 +49,5 @@ https://www.notebookcheck.net/Lenovo-Yoga-Slim-7x-14-G9-review-Multimedia-laptop
 
 # Notes
 I found 4 Dolby .xml files in my Windows DriverStore. This seemed the most likely to be for the Slim 7x.
-
+Decibel values seem to be stored as x10 the real values to avoid decimal points in the xml
 Convert decibels to linear for pipewire: linear = 10^(decibels/20)
