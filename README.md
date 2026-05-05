@@ -17,7 +17,7 @@ Presets seem to conflict so you can only have one in the menu at a time (e.g. Mu
 1. Make sure you are running Ubuntu Concept from https://launchpad.net/~ubuntu-concept/+archive/ubuntu/x1e
 2. Add `snd-soc-x1e80100.i_accept_the_danger=1` to your kernel command line if necessary
 3. Install the latest Alsa UCM Configuration from https://github.com/alsa-project/alsa-ucm-conf
-4. `sudo apt install lsp-plugins calf-plugins bankstown-lv2`
+4. `sudo apt install libpipewire-0.3-modules lsp-plugins calf-plugins bankstown-lv2`
 5. Download this repository and unzip
 6. Run `slim7x-audio-patch.sh`
 7. Run `slim7x-dolby-install.sh`
