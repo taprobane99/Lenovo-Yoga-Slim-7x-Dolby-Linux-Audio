@@ -1,6 +1,6 @@
 # Dolby Audio for Ubuntu on Lenovo Slim 7x
 ## Implemented as a native DSP in Pipewire
-I converted some Dolby EQ settings from Windows into a Pipewire filter chain. This is the original factory-tuned speaker response approximated as an Impulse Response using Room Eq Wizard. I then added in a custom Bankstown Bass tuning, 2 stage Compressor, and LR4 Crossover. The audio is also loudness corrected to sound good at low volumes too (just like Asahi Audio for Macs!). For the Movie profile simple stereo widening and a voice filter is added. All gain values are adjusted to avoid clipping using Carla.
+I converted some Dolby EQ settings from Windows into a Pipewire filter chain. This is the original factory-tuned speaker response approximated as an Impulse Response using Room Eq Wizard. I then added in a custom Bankstown Bass tuning, 2 stage Compressor, and LR4 Crossover. The audio is also loudness corrected to sound good at low volumes too (just like Asahi Audio for Macs). For the Movie profile, simple stereo widening and a voice filter is added. All gain values are adjusted to avoid clipping using Carla.
 
 This laptop has two full range speakers either side of the keyboard deck ("Rear"), and two woofers under the front ("Front").
 
