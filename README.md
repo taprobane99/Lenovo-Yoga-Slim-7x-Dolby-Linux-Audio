@@ -18,7 +18,7 @@ Let me know if you find any bugs.
 5. Download this repository and unzip
 6. Run `slim7x-audio-patch.sh`
 7. Run `slim7x-dolby-install.sh`
-8. Switch to Dolby Atmos - Music as the Output Device in Sound Settings
+8. Switch to Dolby Atmos - Music or Movie as the Output Device in Sound Settings
 
 # Setup for a different computer
 This method should work for any computer that has been Dolby tuned. Ignore steps 1-3 and 6. If your computer has only 2 speakers there is an example .conf to adapt.
