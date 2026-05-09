@@ -1149,7 +1149,7 @@
     <Index>7</Index>
     <Name>Output gain</Name>
     <Symbol>g_out</Symbol>
-    <Value>0.707945764064789</Value>
+    <Value>1</Value>
    </Parameter>
 
    <Parameter>
@@ -3031,7 +3031,7 @@
     <Index>5</Index>
     <Name>Input gain</Name>
     <Symbol>g_in</Symbol>
-    <Value>0.562341272830963</Value>
+    <Value>0.316227734088898</Value>
    </Parameter>
 
    <Parameter>
@@ -3337,167 +3337,6 @@
    <CustomData>
     <Type>http://lv2plug.in/ns/ext/atom#Object</Type>
     <Key>http://lsp-plug.in/plugins/lv2/compressor_stereo/preset_state</Key>
-    <Value>AAAAAFUAAABWAAAAAAAAAAEAAAARAAAAAAAAAAAAAABXAAAAAAAAAAQAAAAHAAAAAAAAAAAAAABYAAAAAAAAAAQAAAAHAAAAAAAAAAAAAAA=</Value>
-   </CustomData>
-  </Data>
- </Plugin>
-
- <!-- LSP Filter Stereo -->
- <Plugin>
-  <Info>
-   <Type>LV2</Type>
-   <Name>LSP Filter Stereo (2)</Name>
-   <URI>http://lsp-plug.in/plugins/lv2/filter_stereo</URI>
-  </Info>
-
-  <Data>
-   <Active>Yes</Active>
-   <ControlChannel>1</ControlChannel>
-   <Options>0x1</Options>
-
-   <Parameter>
-    <Index>0</Index>
-    <Name>Enabled</Name>
-    <Symbol>enabled</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>1</Index>
-    <Name>Input gain</Name>
-    <Symbol>g_in</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>2</Index>
-    <Name>Output gain</Name>
-    <Symbol>g_out</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>3</Index>
-    <Name>Filter mode</Name>
-    <Symbol>mode</Symbol>
-    <Value>0</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>4</Index>
-    <Name>FFT reactivity</Name>
-    <Symbol>react</Symbol>
-    <Value>0.200000002980232</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>5</Index>
-    <Name>Shift gain</Name>
-    <Symbol>shift</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>6</Index>
-    <Name>Graph zoom</Name>
-    <Symbol>zoom</Symbol>
-    <Value>0.0158500000834465</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>7</Index>
-    <Name>Input FFT graph enable Left</Name>
-    <Symbol>ife_l</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>8</Index>
-    <Name>Output FFT graph enable Left</Name>
-    <Symbol>ofe_l</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>9</Index>
-    <Name>Input FFT graph enable Right</Name>
-    <Symbol>ife_r</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>10</Index>
-    <Name>Output FFT graph enable Right</Name>
-    <Symbol>ofe_r</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>11</Index>
-    <Name>Output balance</Name>
-    <Symbol>bal</Symbol>
-    <Value>0</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>16</Index>
-    <Name>Filter type</Name>
-    <Symbol>ft</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>17</Index>
-    <Name>Filter mode</Name>
-    <Symbol>fm</Symbol>
-    <Value>0</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>18</Index>
-    <Name>Filter slope</Name>
-    <Symbol>s</Symbol>
-    <Value>0</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>19</Index>
-    <Name>Frequency</Name>
-    <Symbol>f</Symbol>
-    <Value>130</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>20</Index>
-    <Name>Filter Width</Name>
-    <Symbol>w</Symbol>
-    <Value>4</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>21</Index>
-    <Name>Gain</Name>
-    <Symbol>g</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>22</Index>
-    <Name>Quality factor</Name>
-    <Symbol>q</Symbol>
-    <Value>0</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>23</Index>
-    <Name>Equalizer decramping</Name>
-    <Symbol>decramp</Symbol>
-    <Value>0</Value>
-   </Parameter>
-
-   <CustomData>
-    <Type>http://lv2plug.in/ns/ext/atom#Object</Type>
-    <Key>http://lsp-plug.in/plugins/lv2/filter_stereo/preset_state</Key>
     <Value>AAAAAFUAAABWAAAAAAAAAAEAAAARAAAAAAAAAAAAAABXAAAAAAAAAAQAAAAHAAAAAAAAAAAAAABYAAAAAAAAAAQAAAAHAAAAAAAAAAAAAAA=</Value>
    </CustomData>
   </Data>
@@ -7147,12 +6986,28 @@
    <Target>Built-in Audio Speaker playback:playback_RR</Target>
   </Connection>
   <Connection>
-   <Source>LSP Limiter Stereo:Output L</Source>
+   <Source>Slim 7x Speakers DSP Out-45:output_FL</Source>
    <Target>Built-in Audio Speaker playback:playback_FL</Target>
   </Connection>
   <Connection>
-   <Source>LSP Limiter Stereo:Output R</Source>
+   <Source>Slim 7x Speakers DSP Out-45:output_FR</Source>
    <Target>Built-in Audio Speaker playback:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Slim 7x Speakers DSP Out-45:output_RL</Source>
+   <Target>Built-in Audio Speaker playback:playback_RL</Target>
+  </Connection>
+  <Connection>
+   <Source>Slim 7x Speakers DSP Out-45:output_RR</Source>
+   <Target>Built-in Audio Speaker playback:playback_RR</Target>
+  </Connection>
+  <Connection>
+   <Source>riff:output_FL</Source>
+   <Target>Bankstown:In Left</Target>
+  </Connection>
+  <Connection>
+   <Source>riff:output_FR</Source>
+   <Target>Bankstown:In Right</Target>
   </Connection>
   <Connection>
    <Source>LSP Limiter Stereo (2):Output L</Source>
@@ -7161,6 +7016,14 @@
   <Connection>
    <Source>LSP Limiter Stereo (2):Output R</Source>
    <Target>Built-in Audio Speaker playback:playback_RR</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Limiter Stereo:Output L</Source>
+   <Target>Built-in Audio Speaker playback:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>LSP Limiter Stereo:Output R</Source>
+   <Target>Built-in Audio Speaker playback:playback_FR</Target>
   </Connection>
   <Connection>
    <Source>LSP Crossover Stereo x8:Band Output 0 Left</Source>
@@ -7195,20 +7058,12 @@
    <Target>LSP Multiband Compressor Stereo x8:Input R</Target>
   </Connection>
   <Connection>
-   <Source>LSP Filter Stereo (2):Output L</Source>
+   <Source>Bankstown:Out Left</Source>
    <Target>x42 - IR Convolver Stereo:InL</Target>
   </Connection>
   <Connection>
-   <Source>LSP Filter Stereo (2):Output R</Source>
-   <Target>x42 - IR Convolver Stereo:InR</Target>
-  </Connection>
-  <Connection>
-   <Source>Bankstown:Out Left</Source>
-   <Target>LSP Filter Stereo (2):Input L</Target>
-  </Connection>
-  <Connection>
    <Source>Bankstown:Out Right</Source>
-   <Target>LSP Filter Stereo (2):Input R</Target>
+   <Target>x42 - IR Convolver Stereo:InR</Target>
   </Connection>
   <Connection>
    <Source>x42 - IR Convolver Stereo:OutL</Source>
@@ -7218,14 +7073,6 @@
    <Source>x42 - IR Convolver Stereo:OutR</Source>
    <Target>LSP Compressor Stereo:Input R</Target>
   </Connection>
-  <Connection>
-   <Source>Brave:output_FL</Source>
-   <Target>Bankstown:In Left</Target>
-  </Connection>
-  <Connection>
-   <Source>Brave:output_FR</Source>
-   <Target>Bankstown:In Right</Target>
-  </Connection>
   <Positions>
    <Position x1="1694" y1="1602" x2="2063" y2="1274">
     <Name>Built-in Audio Internal microphones</Name>
@@ -7233,7 +7080,7 @@
    <Position x1="2135" y1="1535">
     <Name>Slim 7x Speakers DSP Out</Name>
    </Position>
-   <Position x1="942" y1="857">
+   <Position x1="1215" y1="842">
     <Name>riff</Name>
    </Position>
    <Position x1="1246" y1="1530" x2="1936" y2="1127">
@@ -7245,7 +7092,7 @@
    <Position x1="2354" y1="1478" x2="1946" y2="1640">
     <Name>BLE MIDI 1</Name>
    </Position>
-   <Position x1="1663" y1="1211" pluginId="0">
+   <Position x1="1665" y1="1213" pluginId="0">
     <Name>LSP Limiter Stereo</Name>
    </Position>
    <Position x1="1670" y1="1062" pluginId="1">
@@ -7266,20 +7113,17 @@
    <Position x1="1263" y1="845" pluginId="6">
     <Name>LSP Filter Stereo (2)</Name>
    </Position>
-   <Position x1="1653" y1="679" pluginId="7">
+   <Position x1="1653" y1="679" pluginId="6">
     <Name>LSP Multiband Compressor Stereo x8 (2)</Name>
    </Position>
-   <Position x1="1954" y1="687" pluginId="8">
+   <Position x1="1954" y1="687" pluginId="7">
     <Name>LSP Multiband Compressor Stereo x8 (3)</Name>
    </Position>
-   <Position x1="1101" y1="845" pluginId="9">
+   <Position x1="1341" y1="848" pluginId="8">
     <Name>Bankstown</Name>
    </Position>
-   <Position x1="1510" y1="843" pluginId="10">
+   <Position x1="1510" y1="843" pluginId="9">
     <Name>x42 - IR Convolver Stereo</Name>
-   </Position>
-   <Position x1="940" y1="865">
-    <Name>Brave</Name>
    </Position>
   </Positions>
  </ExternalPatchbay>
