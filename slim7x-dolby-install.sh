@@ -25,7 +25,7 @@ install_file() {
 
 # 1. User-level PipeWire Configs
 install_file "99-dolby-music.conf" "$USER_HOME/.config/pipewire/pipewire.conf.d/99-dolby-music.conf"
-install_file "99-dolby-movie.conf" "$USER_HOME/.config/pipewire/pipewire.conf.d/99-dolby-movie.conf.disabled"
+install_file "99-dolby-movie.conf" "$USER_HOME/.config/pipewire/pipewire.conf.d/99-dolby-movie.conf"
 
 # 2. User-level WirePlumber Config
 install_file "51-speaker-softmixer.conf" "$USER_HOME/.config/wireplumber/wireplumber.conf.d/51-speaker-softmixer.conf"
