@@ -10,9 +10,6 @@ I added folders with source files and screenshots if you want to do the whole pr
 
 Let me know if you find any bugs.
 
-# Bugs
-Presets seem to conflict so you can only have one in the menu at a time (e.g. Music or Movie).
-
 # Setup
 1. Make sure you are running Ubuntu Concept from https://launchpad.net/~ubuntu-concept/+archive/ubuntu/x1e
 2. Add `snd-soc-x1e80100.i_accept_the_danger=1` to your kernel command line if necessary
@@ -22,7 +19,6 @@ Presets seem to conflict so you can only have one in the menu at a time (e.g. Mu
 6. Run `slim7x-audio-patch.sh`
 7. Run `slim7x-dolby-install.sh`
 8. Switch to Dolby Atmos - Music as the Output Device in Sound Settings
-9. Use `dolby-switch.sh` to change between Music and Movie presets
 
 # Setup for a different computer
 This method should work for any computer that has been Dolby tuned. Ignore steps 1-3 and 6. If your computer has only 2 speakers there is an example .conf to adapt.
