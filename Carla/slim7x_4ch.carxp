@@ -14,91 +14,6 @@
   <BeatsPerMinute>120</BeatsPerMinute>
  </Transport>
 
- <!-- x42 - IR Convolver Stereo -->
- <Plugin>
-  <Info>
-   <Type>LV2</Type>
-   <Name>x42 - IR Convolver Stereo</Name>
-   <URI>http://gareus.org/oss/lv2/zeroconvolv#CfgStereo</URI>
-  </Info>
-
-  <Data>
-   <Active>Yes</Active>
-   <ControlChannel>1</ControlChannel>
-   <Options>0x1</Options>
-
-   <Parameter>
-    <Index>0</Index>
-    <Name>Buffered/Latent Convolution</Name>
-    <Symbol>buffered</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>1</Index>
-    <Name>Dry Signal Level</Name>
-    <Symbol>dry</Symbol>
-    <Value>-60</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>2</Index>
-    <Name>Wet Signal Level</Name>
-    <Symbol>wet</Symbol>
-    <Value>0</Value>
-   </Parameter>
-
-   <Parameter>
-    <Index>3</Index>
-    <Name>Enable</Name>
-    <Symbol>enable</Symbol>
-    <Value>1</Value>
-   </Parameter>
-
-   <CustomData>
-    <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
-    <Key>http://gareus.org/oss/lv2/zeroconvolv#ir</Key>
-    <Value>REW-FIR.wav</Value>
-   </CustomData>
-
-   <CustomData>
-    <Type>http://lv2plug.in/ns/ext/atom#Float</Type>
-    <Key>http://gareus.org/oss/lv2/zeroconvolv#gain</Key>
-    <Value>AACAPw==</Value>
-   </CustomData>
-
-   <CustomData>
-    <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
-    <Key>http://gareus.org/oss/lv2/zeroconvolv#predelay</Key>
-    <Value>AAAAAA==</Value>
-   </CustomData>
-
-   <CustomData>
-    <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
-    <Key>http://gareus.org/oss/lv2/zeroconvolv#artificial_latency</Key>
-    <Value>AAAAAA==</Value>
-   </CustomData>
-
-   <CustomData>
-    <Type>http://lv2plug.in/ns/ext/atom#Bool</Type>
-    <Key>http://gareus.org/oss/lv2/zeroconvolv#sum_inputs</Key>
-    <Value>AAAAAA==</Value>
-   </CustomData>
-
-   <CustomData>
-    <Type>http://lv2plug.in/ns/ext/atom#Vector</Type>
-    <Key>http://gareus.org/oss/lv2/zeroconvolv#channel_gain</Key>
-    <Value>BAAAAAYAAAAAAIA/AACAPwAAgD8AAIA/</Value>
-   </CustomData>
-
-   <CustomData>
-    <Type>http://lv2plug.in/ns/ext/atom#Vector</Type>
-    <Key>http://gareus.org/oss/lv2/zeroconvolv#channel_predelay</Key>
-    <Value>BAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAA</Value>
-   </CustomData>
-  </Data>
- </Plugin>
-
  <!-- LSP Limiter Stereo -->
  <Plugin>
   <Info>
@@ -737,7 +652,7 @@
     <Index>19</Index>
     <Name>Split frequency 1</Name>
     <Symbol>sf_1</Symbol>
-    <Value>300</Value>
+    <Value>400</Value>
    </Parameter>
 
    <Parameter>
@@ -1234,7 +1149,7 @@
     <Index>7</Index>
     <Name>Output gain</Name>
     <Symbol>g_out</Symbol>
-    <Value>1</Value>
+    <Value>0.707945764064789</Value>
    </Parameter>
 
    <Parameter>
@@ -1605,7 +1520,7 @@
     <Index>64</Index>
     <Name>Makeup gain 0</Name>
     <Symbol>mk_0</Symbol>
-    <Value>1.41253757476807</Value>
+    <Value>1.58489322662354</Value>
    </Parameter>
 
    <Parameter>
@@ -1787,7 +1702,7 @@
     <Index>92</Index>
     <Name>Makeup gain 1</Name>
     <Symbol>mk_1</Symbol>
-    <Value>1.25892543792725</Value>
+    <Value>1.58489322662354</Value>
    </Parameter>
 
    <Parameter>
@@ -3116,7 +3031,7 @@
     <Index>5</Index>
     <Name>Input gain</Name>
     <Symbol>g_in</Symbol>
-    <Value>0.707945764064789</Value>
+    <Value>0.562341272830963</Value>
    </Parameter>
 
    <Parameter>
@@ -3256,7 +3171,7 @@
     <Index>25</Index>
     <Name>Attack threshold</Name>
     <Symbol>al</Symbol>
-    <Value>0.251188606023788</Value>
+    <Value>0.316227734088898</Value>
    </Parameter>
 
    <Parameter>
@@ -7058,22 +6973,178 @@
   </Data>
  </Plugin>
 
+ <!-- Bankstown -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Bankstown</Name>
+   <URI>https://chadmed.au/bankstown</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Amount</Name>
+    <Symbol>amt</Symbol>
+    <Value>1.19999992847443</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Floor Frequency</Name>
+    <Symbol>floor</Symbol>
+    <Value>20</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Ceiling Frequency</Name>
+    <Symbol>ceil</Symbol>
+    <Value>200</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Output HPF</Name>
+    <Symbol>final_hp</Symbol>
+    <Value>130</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Second Harmonic</Name>
+    <Symbol>sat_second</Symbol>
+    <Value>1.34999990463257</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Third Harmonic</Name>
+    <Symbol>sat_third</Symbol>
+    <Value>2.54999995231628</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Harmonic Ratio</Name>
+    <Symbol>blend</Symbol>
+    <Value>0.5</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- x42 - IR Convolver Stereo -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>x42 - IR Convolver Stereo</Name>
+   <URI>http://gareus.org/oss/lv2/zeroconvolv#CfgStereo</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Buffered/Latent Convolution</Name>
+    <Symbol>buffered</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Dry Signal Level</Name>
+    <Symbol>dry</Symbol>
+    <Value>-60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Wet Signal Level</Name>
+    <Symbol>wet</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Enable</Name>
+    <Symbol>enable</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
+    <Key>http://gareus.org/oss/lv2/zeroconvolv#ir</Key>
+    <Value>Dolby-Music-Balanced.wav</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Float</Type>
+    <Key>http://gareus.org/oss/lv2/zeroconvolv#gain</Key>
+    <Value>AACAPw==</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
+    <Key>http://gareus.org/oss/lv2/zeroconvolv#predelay</Key>
+    <Value>AAAAAA==</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Int</Type>
+    <Key>http://gareus.org/oss/lv2/zeroconvolv#artificial_latency</Key>
+    <Value>AAAAAA==</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Bool</Type>
+    <Key>http://gareus.org/oss/lv2/zeroconvolv#sum_inputs</Key>
+    <Value>AAAAAA==</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Vector</Type>
+    <Key>http://gareus.org/oss/lv2/zeroconvolv#channel_gain</Key>
+    <Value>BAAAAAYAAAAAAIA/AACAPwAAgD8AAIA/</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Vector</Type>
+    <Key>http://gareus.org/oss/lv2/zeroconvolv#channel_predelay</Key>
+    <Value>BAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAA</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
  <ExternalPatchbay>
   <Connection>
-   <Source>riff:output_FL</Source>
-   <Target>LSP Filter Stereo (2):Input L</Target>
+   <Source>Slim 7x Speakers DSP Out:output_FL</Source>
+   <Target>Built-in Audio Speaker playback:playback_FL</Target>
   </Connection>
   <Connection>
-   <Source>riff:output_FR</Source>
-   <Target>LSP Filter Stereo (2):Input R</Target>
+   <Source>Slim 7x Speakers DSP Out:output_FR</Source>
+   <Target>Built-in Audio Speaker playback:playback_FR</Target>
   </Connection>
   <Connection>
-   <Source>x42 - IR Convolver Stereo:OutL</Source>
-   <Target>LSP Compressor Stereo:Input L</Target>
+   <Source>Slim 7x Speakers DSP Out:output_RL</Source>
+   <Target>Built-in Audio Speaker playback:playback_RL</Target>
   </Connection>
   <Connection>
-   <Source>x42 - IR Convolver Stereo:OutR</Source>
-   <Target>LSP Compressor Stereo:Input R</Target>
+   <Source>Slim 7x Speakers DSP Out:output_RR</Source>
+   <Target>Built-in Audio Speaker playback:playback_RR</Target>
   </Connection>
   <Connection>
    <Source>LSP Limiter Stereo:Output L</Source>
@@ -7131,6 +7202,30 @@
    <Source>LSP Filter Stereo (2):Output R</Source>
    <Target>x42 - IR Convolver Stereo:InR</Target>
   </Connection>
+  <Connection>
+   <Source>Bankstown:Out Left</Source>
+   <Target>LSP Filter Stereo (2):Input L</Target>
+  </Connection>
+  <Connection>
+   <Source>Bankstown:Out Right</Source>
+   <Target>LSP Filter Stereo (2):Input R</Target>
+  </Connection>
+  <Connection>
+   <Source>x42 - IR Convolver Stereo:OutL</Source>
+   <Target>LSP Compressor Stereo:Input L</Target>
+  </Connection>
+  <Connection>
+   <Source>x42 - IR Convolver Stereo:OutR</Source>
+   <Target>LSP Compressor Stereo:Input R</Target>
+  </Connection>
+  <Connection>
+   <Source>Brave:output_FL</Source>
+   <Target>Bankstown:In Left</Target>
+  </Connection>
+  <Connection>
+   <Source>Brave:output_FR</Source>
+   <Target>Bankstown:In Right</Target>
+  </Connection>
   <Positions>
    <Position x1="1694" y1="1602" x2="2063" y2="1274">
     <Name>Built-in Audio Internal microphones</Name>
@@ -7138,11 +7233,8 @@
    <Position x1="2135" y1="1535">
     <Name>Slim 7x Speakers DSP Out</Name>
    </Position>
-   <Position x1="1145" y1="848">
+   <Position x1="942" y1="857">
     <Name>riff</Name>
-   </Position>
-   <Position x1="1462" y1="1519">
-    <Name>Dolby Atmos - Music (Balanced)</Name>
    </Position>
    <Position x1="1246" y1="1530" x2="1936" y2="1127">
     <Name>Built-in Audio Speaker playback</Name>
@@ -7153,35 +7245,41 @@
    <Position x1="2354" y1="1478" x2="1946" y2="1640">
     <Name>BLE MIDI 1</Name>
    </Position>
-   <Position x1="1509" y1="855" pluginId="0">
-    <Name>x42 - IR Convolver Stereo</Name>
-   </Position>
-   <Position x1="1663" y1="1211" pluginId="1">
+   <Position x1="1663" y1="1211" pluginId="0">
     <Name>LSP Limiter Stereo</Name>
    </Position>
-   <Position x1="1670" y1="1062" pluginId="2">
+   <Position x1="1670" y1="1062" pluginId="1">
     <Name>LSP Limiter Stereo (2)</Name>
    </Position>
-   <Position x1="1284" y1="1008" pluginId="3">
+   <Position x1="1284" y1="1008" pluginId="2">
     <Name>LSP Crossover Stereo x8</Name>
    </Position>
-   <Position x1="1924" y1="849" pluginId="4">
+   <Position x1="1924" y1="847" pluginId="3">
     <Name>LSP Multiband Compressor Stereo x8</Name>
    </Position>
-   <Position x1="1393" y1="684" pluginId="5">
+   <Position x1="1393" y1="684" pluginId="4">
     <Name>LSP Filter Stereo</Name>
    </Position>
-   <Position x1="1696" y1="847" pluginId="6">
+   <Position x1="1696" y1="847" pluginId="5">
     <Name>LSP Compressor Stereo</Name>
    </Position>
-   <Position x1="1263" y1="845" pluginId="7">
+   <Position x1="1263" y1="845" pluginId="6">
     <Name>LSP Filter Stereo (2)</Name>
    </Position>
-   <Position x1="1653" y1="679" pluginId="8">
+   <Position x1="1653" y1="679" pluginId="7">
     <Name>LSP Multiband Compressor Stereo x8 (2)</Name>
    </Position>
-   <Position x1="1954" y1="687" pluginId="9">
+   <Position x1="1954" y1="687" pluginId="8">
     <Name>LSP Multiband Compressor Stereo x8 (3)</Name>
+   </Position>
+   <Position x1="1101" y1="845" pluginId="9">
+    <Name>Bankstown</Name>
+   </Position>
+   <Position x1="1510" y1="843" pluginId="10">
+    <Name>x42 - IR Convolver Stereo</Name>
+   </Position>
+   <Position x1="940" y1="865">
+    <Name>Brave</Name>
    </Position>
   </Positions>
  </ExternalPatchbay>
