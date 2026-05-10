@@ -21,7 +21,7 @@ Let me know if you find any bugs.
 This method can be modified for any laptop that has been Dolby tuned. Ignore step 3 if you don't have an X Elite series laptop. You may have a different tweeter/woofer arrangement. If your computer has only 2 speakers there is an example .conf to adapt.
 
 # Audio balance is wrong (too bassy, too much treble, etc.)
-You could try adjusting the balance live in Mini EQ (https://flathub.org/en/apps/io.github.bhack.mini-eq). Then use this to adjust the multiband compressor makeup gains in the pipewire .conf files (e.g. 1.12589 (1dB), 1.25893 (2dB), 1.41254 (3dB), 1.58489 (4dB), 1.77828 (5dB), 1.99526 (6dB))
+You could try adjusting the balance live in Mini EQ (https://flathub.org/en/apps/io.github.bhack.mini-eq). Then use this to adjust the multiband compressor makeup gains in the pipewire .conf files (e.g. 1.12589 (1dB), 1.25893 (2dB), 1.41254 (3dB), 1.58489 (4dB), 1.77828 (5dB), 1.99526 (6dB)). Or create new impulse responses using the 'Detailed' or 'Warm' filters.
 
 # FAQ
 1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers.
