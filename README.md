@@ -1,27 +1,24 @@
 # Dolby Audio for Ubuntu on Lenovo Slim 7x
 ## Implemented as a native DSP in Pipewire
-I converted some Dolby EQ settings from Windows into a Pipewire filter chain. This is the original factory-tuned speaker response approximated as an Impulse Response using Room Eq Wizard. I then added in a custom Bankstown Bass tuning, 2 stage Compressor, and LR4 Crossover. The audio is also loudness corrected to sound good at low volumes too (just like Asahi Audio for Macs). For the Movie profile, simple stereo widening and a voice filter is added. All gain values are adjusted to avoid clipping using Carla.
+I converted some Dolby EQ settings from Windows into a Pipewire filter chain. This is the original factory speaker tuning approximated as an Impulse Response using RePhase. I then added in a custom Bankstown Bass tuning, 2 stage Compressor, and Linkwitz-Riley Crossover. The audio is also Loudness corrected to sound good at low volumes too (just like Asahi Audio for Macs). For the Movie profile, simple stereo widening and a voice filter is added. All gain values are adjusted to avoid clipping using Carla.
 
 This laptop has two full range speakers either side of the keyboard deck ("Rear"), and two woofers under the front ("Front").
 
 Providing you have run `slim7x-audio-patch.sh` the Power Amplifier is set to 0 dB so 100% master volume should be a safe upper limit. It is useful to install `Pavucontrol` to set volumes. I have "Built-in Audio Speaker" set at 100%, and my Dolby Atmos at 90% most of the time.
 
-I added folders with source files and screenshots if you want to do the whole process yourself in Room Eq Wizard and Carla. Dolby also have more digital audio filters such as "Detailed", "Balanced", "Warm". I added the "Balanced" filters by zero-centering and then 10% blending with the speaker response (as Dolby seem to do).
+I added folders with source files and screenshots if you want to do the whole process yourself in RePhase and Carla. Dolby also have more digital audio filters such as "Detailed", "Balanced", "Warm". I added the "Balanced" filters by zero-centering and then 10% blending with the speaker tuning (as Dolby seem to do).
 
 Let me know if you find any bugs.
 
 # Setup
-1. Make sure you are running Ubuntu Concept from https://launchpad.net/~ubuntu-concept/+archive/ubuntu/x1e
-2. Add `snd-soc-x1e80100.i_accept_the_danger=1` to your kernel command line if necessary
-3. Install the latest Alsa UCM Configuration from https://github.com/alsa-project/alsa-ucm-conf
-4. `sudo apt install libpipewire-0.3-modules lsp-plugins calf-plugins bankstown-lv2`
-5. Download this repository and unzip
-6. Run `slim7x-audio-patch.sh`
-7. Run `slim7x-dolby-install.sh`
-8. Switch to Dolby Atmos - Music or Movie as the Output Device in Sound Settings
+1. `sudo apt install libpipewire-0.3-modules lsp-plugins calf-plugins bankstown-lv2`
+2. Download this repository and unzip
+3. Run `slim7x-audio-patch.sh`
+4. Run `slim7x-dolby-install.sh`
+5. Switch to Dolby Atmos - Music or Movie as the Output Device in Sound Settings
 
 # Setup for a different computer
-This method should work for any computer that has been Dolby tuned. Ignore steps 1-3 and 6. If your computer has only 2 speakers there is an example .conf to adapt.
+This method can be modified for any laptop that has been Dolby tuned. Ignore step 3 if you don't have an X Elite series laptop. You may have a different tweeter/woofer arrangement. If your computer has only 2 speakers there is an example .conf to adapt.
 
 # FAQ
 1. Why not use EasyEffects? As far as I know EasyEffects can't upmix sound to 4 speakers.
@@ -36,7 +33,7 @@ https://github.com/sambow23/nixstuff/tree/main/hosts/t14s (for speaker protectio
 
 https://github.com/AsahiLinux/asahi-audio (for bankstown)
 
-https://www.roomeqwizard.com/ (for creating the impulse response)
+https://www.rephase.org/ (for creating the impulse response)
 
 https://flathub.org/en/apps/org.audacityteam.Audacity (optional, for trimming the impulse response using stereogram view)
 
