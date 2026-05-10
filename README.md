@@ -11,7 +11,7 @@ I added folders with source files and screenshots if you want to do the whole pr
 Let me know if you find any bugs.
 
 # Setup
-1. `sudo apt install libpipewire-0.3-modules lsp-plugins calf-plugins bankstown-lv2`
+1. `sudo apt install libpipewire-0.3-modules lsp-plugins bankstown-lv2`
 2. Download this repository and unzip
 3. Run `slim7x-audio-patch.sh`
 4. Run `slim7x-dolby-install.sh`
