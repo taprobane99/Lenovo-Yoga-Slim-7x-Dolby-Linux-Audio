@@ -64,7 +64,7 @@ echo "  [✓] Package 'alsa-ucm-conf' is now on hold."
 echo ""
 echo "Patching process complete."
 echo "Reloading ALSA UCM configuration..."
-alsaucm reload
+alsaucm reload || { echo "alsaucm executable not found, reboot to apply changes"; exit 0; }
 
 # --- 4. Set Initial WirePlumber Volume ---
 echo ""
